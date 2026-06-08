@@ -165,7 +165,7 @@ function App() {
     if (results) search(true, newExtras)
   }
 
-  const togglePin = (cat: CategoryKey, item: OutfitItem) => {
+  const togglePin = (_cat: CategoryKey, item: OutfitItem) => {
     setPinned((prev) => {
       const next = { ...prev }
       if (next[item.link]) delete next[item.link]
